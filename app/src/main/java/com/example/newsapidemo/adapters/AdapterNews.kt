@@ -34,6 +34,7 @@ class AdapterNews(var context:Context, var list: ArrayList<Article>): RecyclerVi
 
         fun bind(article: Article){
             itemView.text_view_title.text = article.title
+            itemView.text_view_author.text = article.author
         }
     }
 
